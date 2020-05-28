@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='timeline.css'>    <title>timeline</title>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="title">
+        <h1>삼국시대-백제</h1>
+    </div>
+    <div id="past">
+        <button class="button__change__bg" onclick='
+        document.querySelector("body").style.backgroundImage="url(https://cdn.pixabay.com/photo/2014/06/21/10/25/old-373724_960_720.jpg)";
+        document.querySelector("body").style.backgroundRepeat="no-repeat";
+        document.querySelector("body").style.backgroundSize="cover";'>
+        과거</button>
+        <button class="button__change__bg" onclick='
+        document.querySelector("body").style.backgroundImage="url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/IPhone_X_vector.svg/1200px-IPhone_X_vector.svg.png)";
+        document.querySelector("body").style.backgroundRepeat="no-repeat";
+        document.querySelector("body").style.backgroundSize="1350px 2400px";'>
+        현재</button>
+    </div>
+    <div class="content">
+        <div class="card">
+            <img src="http://photo.hankooki.com/newsphoto/v001/2019/01/02/eyoree20190102152901_B_01_C_2.jpg">
+            <div class="date">234~286</div>
+            <div class="what">고이왕</div>
+            <div class="where">백제</div>
+            <div class="text">왕위 형제 상속, 관등/공복 제정, 율령반포</div>
+            <div class="dot"></div>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRyEDptD6hxD_P7ovzRLa6itJmsDtF2oJG8o24jtrxd2Ur5PwxZ&usqp=CAU">
+            <div class="date">346~375</div>
+            <div class="what">근초고왕</div>
+            <div class="where">백제</div>
+            <div class="text">마한정복, 평양성 공격, '서기'편찬</div>
+            <div class="dot"></div>
+        </div>
+        <div class="card">
+            <img src="https://lh3.googleusercontent.com/proxy/s4ItjAKSG3HEKFc2fqhhw_zFUtCCsY51pwLpIExVjHwcaPGaqejG00pvV18_Qi2ErE6Qb8nQUwRWnNIGa-Dck2peZ0nfAqkmIuFb2r1TyxA">
+            <div class="date">384~385</div>
+            <div class="what">침류왕</div>
+            <div class="where">백제</div>
+            <div class="text">불교 수용</div>
+            <div class="dot"></div>
+        </div>
+        <div class="card">
+            <img src="https://lh3.googleusercontent.com/proxy/apM2pEFGqknXvJ8v-_XVnXKeYLsvm5oj9gZXJFS7WssB48Pux7Y0hJ7kLOGxP5bWO4xk28K9w7i80pYZUZKKXB3jMlvPJv3KowFxu3WHC9V4">
+            <div class="date">427~455</div>
+            <div class="what">비유왕</div>
+            <div class="where">백제</div>
+            <div class="text">나제동맹 성립</div>
+            <div class="dot"></div>
+        </div>
+        <div class="card">
+            <img src="https://lh3.googleusercontent.com/proxy/UH_bz3QfLRB36LZ3nyMd1gde7duebZBLov05IG47emP0tMoBXU3itcFb--97U2aCtV1f8EIWOlOmmYvMqygI-ZXxG-CHuZJAafxn9BCZLCOh">
+            <div class="date">475~477</div>
+            <div class="what">문주왕</div>
+            <div class="where">백제</div>
+            <div class="text">웅진 천도</div>
+            <div class="dot"></div>
+        </div>
+        <div class="card">
+            <img src="https://img.hani.co.kr/imgdb/resize/2010/0914/128436771363_20100914.JPG">
+            <div class="date">501~523</div>
+            <div class="what">무령왕</div>
+            <div class="where">백제</div>
+            <div class="text">22담로 파견</div>
+            <div class="dot"></div>
+        </div>
+        <div class="card">
+            <img src="data:image/jpeg;base64,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">
+            <div class="date">523~554</div>
+            <div class="what">성왕</div>
+            <div class="where">백제</div>
+            <div class="text">사비 천도, 한강 하류 일시 회복, 관상성 전투(전사)</div>
+            <div class="dot">
+        </div>
+    </div>
+    <div id='line'></div>
+    <button id='button__top' onclick="location.href='#title'">
+        △ top
+    </button>   
+    <style>
+        body {
+          background-image: url("background1.png");
+          background-size: cover;
+      }
+      </style>
+         
+</body>
+</html>
